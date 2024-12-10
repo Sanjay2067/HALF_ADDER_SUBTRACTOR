@@ -77,11 +77,12 @@ RegisterNumber: 24000581
 
 **RTL Schematic**
 
-![Screenshot 2024-11-12 101336](https://github.com/user-attachments/assets/0667ce93-345a-4bec-8c25-a2cf7cf47731)
+![Screenshot 2024-12-10 101336](https://github.com/user-attachments/assets/0667ce93-345a-4bec-8c25-a2cf7cf47731)
 
 
 **Output/TIMING Waveform**
-![Screenshot 2024-11-12 101508](https://github.com/user-attachments/assets/0564f8a4-97da-4ce7-8740-eb97c0f35d0a)
+![Screenshot 2024-12-10 134743](https://github.com/user-attachments/assets/b2e59d37-ac04-4c22-8848-f8781384ee83)
+
 
 
 **Result:**
