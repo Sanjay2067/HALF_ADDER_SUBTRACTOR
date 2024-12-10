@@ -1,6 +1,10 @@
 # HALF_ADDER_SUBTRACTOR
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
+```
+Developed by: SANJAY KUMAR.B
+RegisterNumber: 24000581
+```
 
 **AIM:**
 
@@ -34,6 +38,7 @@ Borrow = A’B
 Figure -02 HALF Subtractor
 
 **Truthtable**
+![DE E-3 truthtable](https://github.com/04Varsha/HALF_ADDER_SUBTRACTOR/assets/149035374/c06bba9c-9c1e-4e92-a1e3-869583ce44c7)
 
 **Procedure**
 
@@ -49,29 +54,40 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
-
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-```
-module exp3(a,b,cy,sm,df,bo);
+~~~
+*Half_adder*
+module halfadd_top(a,b,sum,carry);
 input a,b;
-output sm,cy,df,bo;
-xor(sm,a,b);
-and(cy,a,b);
-xor(df,a,b);
-and(bo,~a,b);
+output sum,carry; 
+ assign sum = a^b;
+ assign carry = a & b;
 endmodule
-```
 
-Developed by: RegisterNumber:*/
+*Half_subtractor*
+module halfsub_top(a,b,D,Bo);
+input a,b;
+output D,Bo; // Outputs sum and carry for half adder:Outputs difference D,Borrow Bo for half subtractor
+assign D = a ^ b;
+  assign Bo = ~a & b;
+endmodule
+
+~~~
+
 
 **RTL Schematic**
-![Screenshot 2024-11-05 110629](https://github.com/user-attachments/assets/a50b09a7-9b01-4ea2-91f0-dab922b0e148)
-
+![DE E-3 RTL](https://github.com/04Varsha/HALF_ADDER_SUBTRACTOR/assets/149035374/4146d7c9-565b-4389-b8a2-54118b2c261e)
 
 **Output/TIMING Waveform**
-![Screenshot 2024-11-05 110440](https://github.com/user-attachments/assets/e79ab3b4-7db6-4316-8ab4-2f1ad9a4e801)
 
+HALF ADDER:
+
+![DE E-3 adder](https://github.com/04Varsha/HALF_ADDER_SUBTRACTOR/assets/149035374/8efe7503-fea8-4272-bf8b-0e334e95cdb1)
+
+HALF SUTRACTOR:
+
+![DE E-3 subtractor](https://github.com/04Varsha/HALF_ADDER_SUBTRACTOR/assets/149035374/5bd0588f-6b33-4352-bfb0-2e33f3f77f13)
 
 
 **Result:**
-thus the half adder,half subractor and the truth table is verified.
+The code is excecuted successfully.
